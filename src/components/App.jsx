@@ -7,7 +7,7 @@ import Notification from './Notification/Notification';
 
 import { Container } from './App.styled';
 
-const LS_ALL_STATE = 'allState';
+const LS_ALL_STATE = 'feedbackStatistics';
 
 function countReducer(state, action) {
   switch (action.option) {
