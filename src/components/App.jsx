@@ -25,8 +25,8 @@ function countReducer(state, action) {
 }
 
 function init(params) {
-  const sr = localStorage.getItem(LS_ALL_STATE);
-  const parsItem = JSON.parse(sr);
+  const receivingDataLS = localStorage.getItem(LS_ALL_STATE);
+  const parsItem = JSON.parse(receivingDataLS);
 
   return { ...params, ...parsItem };
 }

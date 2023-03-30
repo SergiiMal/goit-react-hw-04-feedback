@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Conteiner, Button } from './FeedbackOptions.styled';
+
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <Conteiner>
     {options.map((option, index) => (
