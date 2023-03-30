@@ -6,7 +6,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => (
       <Button
         key={index}
         type="button"
-        onClick={() => onLeaveFeedback({ option })}
+        onClick={() => onLeaveFeedback({ option, value: 1 })}
       >
         {option[0].toUpperCase() + option.slice(1)}
       </Button>
