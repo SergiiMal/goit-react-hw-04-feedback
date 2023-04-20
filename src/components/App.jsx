@@ -1,8 +1,7 @@
 import { useReducer } from 'react';
-
-import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
+import SectionTitle from './SectionTitle/SectionTitle';
 import Statistics from './Statistics/Statistics';
-import Section from './Section/Section';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Notification from './Notification/Notification';
 
 import { Container } from './App.styled';
@@ -66,13 +65,13 @@ export function App() {
 
   return (
     <Container>
-      <Section title="Please Leave feedback" />
+      <SectionTitle title="Please Leave feedback" />
       <FeedbackOptions
         options={['good', 'neutral', 'bad']}
         onLeaveFeedback={handleIncrement}
       />
 
-      <Section title="Statistics" />
+      <SectionTitle title="Statistics" />
       {allTotal > 0 ? (
         <Statistics
           good={good}

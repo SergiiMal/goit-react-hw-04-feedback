@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { Container, Stats, Total, Event } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
@@ -10,7 +9,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       <Stats>Bad: {bad}</Stats>
       <Total>Total: {total()}</Total>
       <Total>
-        Positive feedback:
+        Posituve feedback:
         <Event eventPercentage={positivePercentage()}>
           {positivePercentage()}
         </Event>
@@ -19,10 +18,9 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     </Container>
   );
 };
-
 export default Statistics;
 
-Statistics.propTypes = {
+Statistics.prototype = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
